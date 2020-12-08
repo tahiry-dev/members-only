@@ -7,7 +7,7 @@
 
 ![screenshot](https://user-images.githubusercontent.com/47100064/101430652-77fc0180-3916-11eb-9624-e4f3f67bd143.png)
 
-Visitors couldn't see the author of the post unless they creates an account
+Visitors couldn't see the author of the post unless they create an account
 
 ## Built With
 
