@@ -4,7 +4,7 @@ class PostsController < ApplicationController
     end
 
     def new
-        @message = Post.new
+        @message = current_user.posts.build
     end
 
     def show
@@ -12,7 +12,7 @@ class PostsController < ApplicationController
     end
 
     def create
-        @message = params.require(:post).permit(:title, :message)
+        @message = current_user.posts(params.require(:post).permit(:title, :message))
         if @message.save
             flash[:success] = "your post has been created successfully"
             redirect_to posts_path
