@@ -1,14 +1,14 @@
 class PostsController < ApplicationController
+
+  before_action :authenticate_user!, except: :index
+
+
     def index
         @messages = Post.all
     end
 
     def new
       @message = current_user.posts.build
-    end
-
-    def show
-        @message = Post.find(params[:id])
     end
 
     def create
@@ -20,6 +20,14 @@ class PostsController < ApplicationController
         else
           format.html { render :new }
         end
+      end
+    end
+
+    def destroy
+      @message = Post.find(params[:id])
+      @message.destroy
+      respond_to do |format|
+        format.html { redirect_to posts_url, notice: 'Your message was successfully destroyed.' }
       end
     end
 

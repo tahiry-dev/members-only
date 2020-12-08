@@ -6,10 +6,11 @@
   <%= link_to 'Log-In', new_user_session_path %><br>
 <% end %>
 
+<p>if you are logged in, you can create an article <%= link_to 'here', new_post_path %>
+
 <% @messages.each do |msg| %>
   <h3><%= msg.title%></h3>
-  <%= msg.message%>
+  <p><%= msg.message %></p>
+  <p>Author: <%= msg.user.name if user_signed_in?  %><p>
+  <%= link_to 'Delete', msg, method: :delete, data: { confirm: 'Are you sure?' } %>
 <% end %>
-
-
-
