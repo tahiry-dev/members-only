@@ -26,14 +26,18 @@ Make sure you have ruby installed on your Machine
 ```
 git clone https://github.com/tahiry-dev/members-only.git .
 ```
--
 
-Move to the directory where you clone the repository and copy and paste the following command:
-```bundle install
+- Move to the directory where you clone the repository and copy and paste the following command:
+
 ```
-```rails db:migrate
+  bundle install
 ```
-```rails s
+
+```
+  rails db:migrate
+```
+```
+  rails s
 ```
 Open your favorite browser and tape: http://localhost:3000/
 
