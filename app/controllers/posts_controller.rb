@@ -6,7 +6,7 @@ class PostsController < ApplicationController
   end
 
   def new
-    @message = current_user.posts.build
+    @message = Post.new
   end
 
   def create
