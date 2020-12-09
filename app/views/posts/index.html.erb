@@ -1,0 +1,7 @@
+<p>if you are logged in, you can create an article <%= link_to 'here', new_post_path %>
+
+<% @messages.each do |msg| %>
+  <h3><%= msg.title%></h3>
+  <p><%= msg.message %></p>
+  <em><%= msg.user.name if user_signed_in?  %><em>
+<% end %>

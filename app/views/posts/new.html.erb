@@ -1,0 +1,27 @@
+<h2>Create a new Message Here</h2>
+
+<%= form_with(model: @message, local: true) do |form| %>
+  <% if @message.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@message.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+        <% @message.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+    <p>
+        <%=form.label :title %><br>
+        <%=form.text_field :title, placeholder: 'Your title'%>
+    </p>
+    <p>
+        <%=form.label :message %><br>
+        <%=form.text_area :message, placeholder: 'Write your message Here', size: "60x12" %>
+    </p>
+
+    <p>
+        <%=form.submit%>
+    </p>
+<% end %>

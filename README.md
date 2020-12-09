@@ -1,75 +1,64 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Members Only
 
-> One paragraph statement about the project.
+> This Project implement the authentication process of Rails, using the gem Devise
 
-![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+![screenshot](https://user-images.githubusercontent.com/47100064/101430652-77fc0180-3916-11eb-9624-e4f3f67bd143.png)
+
+Visitors couldn't see the author of the post unless they create an account
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
+- Ruby
+- Rails
+- Devise
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
+Make sure you have ruby installed on your Machine
 
 ### Setup
 
-### Install
+- Clone the repository with the following command
+```
+git clone https://github.com/tahiry-dev/members-only.git .
+```
 
-### Usage
+- Move to the directory where you clone the repository and copy and paste the following command:
 
-### Run tests
+```
+  bundle install
+```
 
-### Deployment
-
+```
+  rails db:migrate
+```
+```
+  rails s
+```
+Open your favorite browser and tape: http://localhost:3000/
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Tahiry RANDRIAMIARINTSOA**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [@tahiry](https://github.com/tahiry-dev)
+- LinkedIn: [Tahiry RANDRIAMIARINTSOA](https://www.linkedin.com/in/tahiry-randriamiarintsoa/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/tahiry-dev/members-only/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
